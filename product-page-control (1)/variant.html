@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OfficeSupply Online - Kit Escritório Premium (Variante)</title>
+    <link rel="stylesheet" href="style-variant.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>OfficeSupply Online</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Promoções</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="product-detail">
+            <div class="product-image">
+                <img src="img001.jpeg" alt="Kit Escritório Premium com canetas, caderno e organizador">
+            </div>
+
+            <div class="product-info">
+                <!-- Destaque de produto premium -->
+                <div class="premium-tag">
+                    ⭐ Produto Premium – Seleção Especial
+                </div>
+
+                <h2 class="product-title">Kit Escritório Premium Clássico</h2>
+                <p class="product-category">Categoria: Kits Essenciais</p>
+
+                <div class="product-price">
+                    <span class="current-price">R$ 299,90</span>
+                </div>
+
+                <p class="product-description">
+                    Um kit completo com itens essenciais de alta qualidade para o dia a dia no escritório. 
+                    Pensado para quem busca funcionalidade, organização e durabilidade em um só produto.
+                </p>
+
+                <div class="value-box">
+                    <h3>Por que este kit vale o investimento?</h3>
+                    <ul>
+                        <li>✔ Materiais profissionais de longa durabilidade</li>
+                        <li>✔ Economia de até 20% ao comprar o kit completo</li>
+                        <li>✔ Entrega rápida em todo Brasil</li>
+                        <li>✔ Garantia de 30 dias</li>
+                        <li>✔ Estoque limitado – garanta o seu!</li>
+                    </ul>
+                </div>
+
+                <button class="variant-btn" onclick="trackPurchaseClick()">
+                    Comprar Agora – Garantir Meu Kit!
+                </button>
+
+                <div class="product-features">
+                    <h3>Características:</h3>
+                    <ul>
+                        <li>Canetas esferográficas de ponta fina</li>
+                        <li>Caderno capa dura A5</li>
+                        <li>Bloco de notas adesivas</li>
+                        <li>Organizador de mesa compacto</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2>Outros Produtos que Você Pode Gostar</h2>
+
+            <div class="product-grid">
+                <div class="product-card" onclick="trackRecommendedClick('Mouse Ergonômico')">
+                    <img src="mouse.jpg" alt="Mouse Ergonômico Bluetooth">
+                    <h3>Mouse Ergonômico Bluetooth Silence</h3>
+                    <p class="card-category">Categoria: Tecnologia Essencial</p>
+                    <p class="card-price">R$ 149,90</p>
+                    <button class="add-to-cart-btn-small">Ver Detalhes</button>
+                </div>
+
+                 <div class="product-card" onclick="trackRecommendedClick('Mouse Ergonômico')">
+                    <img src="MouseGamer.png" alt="Mouse Ergonômico Bluetooth">
+                    <h3>Mouse Gamer com Fio</h3>
+                    <p class="card-category">Categoria: Periféricos Gamer</p>
+                    <p class="card-price">R$ 98,50</p>
+                    <button class="add-to-cart-btn-small">Ver Detalhes</button>
+                </div>
+
+                                 <div class="product-card" onclick="trackRecommendedClick('Mouse Ergonômico')">
+                    <img src="TecladoMecanico.png" alt="Mouse Ergonômico Bluetooth">
+                    <h3>Teclado Mecânico RGB</h3>
+                    <p class="card-category">Categoria: Periféricos Gamer</p>
+                    <p class="card-price">R$ 158,0</p>
+                    <button class="add-to-cart-btn-small">Ver Detalhes</button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 OfficeSupply Online - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        function trackPurchaseClick() {
+            console.log('Variante B - Botão Comprar clicado');
+            // Aqui enviaria evento para Google Analytics ou plataforma de A/B Test
+            // gtag('event', 'purchase_click', {variant: 'B', product: 'Kit Escritório Premium'});
+        }
+
+        function trackRecommendedClick(productName) {
+            console.log(`Variante B - Produto recomendado clicado: ${productName}`);
+            // Aqui enviaria evento para GA/Optimizely/etc.
+            // gtag('event', 'recommended_click', {variant: 'B', product: productName});
+        }
+    </script>
+</body>
+</html>
